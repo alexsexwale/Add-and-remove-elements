@@ -1,18 +1,18 @@
-//// PART 3: Array - Splice() to add an element /////
+//// PART 4: Array - Splice() to remove elements /////
 
+// Splice can be used to remove elements in the array
 
-// Splice can be used to add elements in the array
+// splice(index position of where we want to start, number of elements we want to remove)
 
 // Insert a new element at a specific index of the array
 const classmates = ['Arden', 'Alex', 'Jamy-lee', 'Jordan', 'Joshua'];
-// We are adding a new element at index 2, which will make it the 3rd element in the array. 
-classmates.splice(2,0,"Nomvuyiseko");
-console.log(classmates);
+// We are removing 1 element starting from index 0.
+// classmates.splice(0,1);
+// console.log(classmates);
 
-// We are adding a new element at index 4, which will make it the 5th element in the array. 
-classmates.splice(4,0,"Reese");
+// We are removing 2 elements from index 2
+classmates.splice(2,2);
 console.log(classmates);
-
 
 // Insert a new object element at a specific index of the array
 let people = [
@@ -37,8 +37,5 @@ let people = [
         age: 23
     }
 ];
-people.splice(2,0,{name: 'Nomvuyiseko', age: 24 });
-console.log(people);
-
-people.splice(4,0,{name: 'Reese', age: 24 });
+people.splice(2,1);
 console.log(people);
