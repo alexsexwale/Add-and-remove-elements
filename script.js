@@ -1,9 +1,9 @@
-//// PART 1: Array - Push() /////
+//// PART 2: Array - Unshift() /////
 
 
-// Insert a new element at the back of the array
+// Insert a new element at the front of the array
 const classmates = ['Arden', 'Alex', 'Jamy-lee', 'Jordan', 'Joshua'];
-classmates.push("Nomvuyiseko");
+classmates.unshift("Nomvuyiseko");
 console.log(classmates);
 
 // Insert a new object element at the back of the array
@@ -37,5 +37,5 @@ let people = [
         age: 27
     }, 
 ];
-people.push({name: 'Nomvuyiseko', age: 24 });
+people.unshift({name: 'Nomvuyiseko', age: 24 });
 console.log(people);
